@@ -8,6 +8,6 @@ default:
     apnsTopic: com.company.app
 
 
-development
+development:
   apns:
     sandbox: true
