@@ -1,1 +1,1 @@
-declare var storageSubject: import('@universal-packages/push-notifications').PushNotifications
+declare var pushNotificationSubject: import('@universal-packages/push-notifications').PushNotifications
