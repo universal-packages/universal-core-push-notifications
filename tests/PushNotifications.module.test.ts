@@ -1,4 +1,5 @@
 import { Logger } from '@universal-packages/logger'
+
 import { PushNotificationsModule } from '../src'
 
 describe('PushNotificationsModule', (): void => {
