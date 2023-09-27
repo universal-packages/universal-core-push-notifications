@@ -2,7 +2,7 @@ import { Logger } from '@universal-packages/logger'
 
 import { PushNotificationsModule } from '../src'
 
-describe('PushNotificationsModule', (): void => {
+describe(PushNotificationsModule, (): void => {
   it('behaves as expected', async (): Promise<void> => {
     const logger = new Logger({ silence: true })
     const module = new PushNotificationsModule({} as any, logger)
