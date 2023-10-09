@@ -31,7 +31,7 @@
     "typescript": "^4.7.3"
   },
   "peerDependencies": {
-    "@universal-packages/core": "^1.12.6"
+    "@universal-packages/core": "^1.12.8"
   },
   "jest": {
     "testRunner": "jest-circus/runner",
