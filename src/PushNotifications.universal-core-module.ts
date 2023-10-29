@@ -2,7 +2,7 @@ import { CoreModule } from '@universal-packages/core'
 import { TerminalTransport } from '@universal-packages/logger'
 import { PushNotifications, PushNotificationsOptions } from '@universal-packages/push-notifications'
 
-export default class RedisModule extends CoreModule<PushNotificationsOptions> {
+export default class PishNotificationsModule extends CoreModule<PushNotificationsOptions> {
   public static readonly moduleName = 'push-notifications-module'
   public static readonly description = 'Push notifications core module wrapper'
 
