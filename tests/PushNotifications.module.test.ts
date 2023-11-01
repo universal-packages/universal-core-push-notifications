@@ -34,6 +34,7 @@ describe(PushNotificationsModule, (): void => {
           universeDomain: 'googleapis.com'
         }
       },
+      dryRun: true,
       apns: {
         p8CertificateLocation: './tests/__fixtures__/credentials/apns.p8',
         teamId: 'my-team-id',

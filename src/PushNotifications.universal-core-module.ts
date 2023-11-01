@@ -14,12 +14,23 @@ export default class PishNotificationsModule extends CoreModule<PushNotification
 
     this.subject = new PushNotifications(this.config)
 
-    this.subject.on('warning', (message: string): void => {
+    this.subject.on('warning', (event: any): void => {
+      const { message } = event
+
       this.logger.publish('WARNING', message, null, 'PN')
     })
 
-    this.subject.on('error', (message: string): void => {
-      this.logger.publish('ERROR', message, null, 'PN')
+    this.subject.on('error', (event: any): void => {
+      const { error, payload } = event
+      const { capability, notification, token } = payload
+
+      this.logger.publish('ERROR', `Error pushing notification [${capability}]`, null, 'PN', { error, metadata: { notification, token } })
+    })
+
+    this.subject.on('push', (event: any): void => {
+      const { capability, notification, token } = event.payload
+
+      this.logger.publish('INFO', `Notification pushed [${capability}]`, null, 'PN', { metadata: { notification, token } })
     })
 
     this.subject.prepare()
