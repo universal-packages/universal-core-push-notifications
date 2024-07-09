@@ -1,0 +1,13 @@
+default:
+  firebase:
+    credentialLocation: ./credentials/firebase.json
+  apns:
+    p8CertificateLocation: ./credentials/apns.p8
+    teamId: my-team-id
+    keyId: p8-key-id
+    apnsTopic: com.company.app
+
+
+development:
+  apns:
+    sandbox: true

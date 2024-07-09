@@ -17,7 +17,7 @@ npm install @universal-packages/core
 ## Initialization
 
 ```shell
-ucore exec push-notifications-task init
+ucore initialize push-notifications
 ```
 
 ## Global

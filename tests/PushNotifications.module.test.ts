@@ -6,7 +6,7 @@ import { PushNotificationsModule } from '../src'
 jest.mock('firebase-admin')
 jest.mock('jsonwebtoken')
 
-jestCore.runBare({
+coreJest.runBare({
   coreConfigOverride: {
     config: { location: './tests/__fixtures__/config' },
     modules: { location: './tests/__fixtures__' },
