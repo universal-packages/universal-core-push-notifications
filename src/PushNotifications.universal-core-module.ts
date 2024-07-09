@@ -4,7 +4,7 @@ import { PushNotifications, PushNotificationsOptions } from '@universal-packages
 import { LOG_CONFIGURATION } from './LOG_CONFIGURATION'
 
 export default class PishNotificationsModule extends CoreModule<PushNotificationsOptions> {
-  public static readonly moduleName = 'push-notifications-module'
+  public static readonly moduleName = 'push-notifications'
   public static readonly description = 'Push notifications core module wrapper'
 
   public subject: PushNotifications
